@@ -1,3 +1,4 @@
 # AngularRouteApp
-1) Angularjs + Node based routing application 
-2) Used http calls 
+Angularjs + Node based routing application 
+In Single page applications we have to route the content of the page with different content.
+
