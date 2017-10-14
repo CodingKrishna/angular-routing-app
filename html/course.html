@@ -1,0 +1,15 @@
+<div class="course-list txt-center sansserif" ng-controller="courseCtrl">
+    <h1>Courses</h1>
+    <table>
+		<tr>
+			<th>Course</th>
+			<th>Duration</th>
+			<th>Fee</th>
+		</tr>
+		<tr  ng-repeat='course in courses'>
+		<td>{{course.course}}</td>
+         <td>{{course.duration}}</td>
+         <td>{{course.fee}}</td>
+         </tr>
+	</table>
+</div>

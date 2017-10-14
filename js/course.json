@@ -1,0 +1,14 @@
+[
+  {"course":"CoreJava" ,"duration":"2months" ,"fee":"5000"},
+   {"course":"J2EE", "duration":"2months" ,"fee":"5000"},
+    {"course":"CoreJava/J2EE", "duration":"3months","fee":"15000"},
+   {"course":"Spring" ,"duration":"2months" ,"fee":"5000"},
+    {"course":"Hibernate" ,"duration":"2months" ,"fee":"5000"},
+   {"course":"WebPackage", "duration":"3months" ,"fee":"15000"},
+   {"course":"HTML,CSS,JS" ,"duration":"2months" ,"fee":"5000"},
+   {"course":"AnjualrJs", "duration":"2months" ,"fee":"10000"},
+   {"course":"Reactjs" ,"duration":"2months" ,"fee":"10000"},
+   {"course":"WebPackage", "duration":"3months" ,"fee":"15000"}
+  ]
+
+ 
