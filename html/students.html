@@ -1,0 +1,15 @@
+<div class="students-list txt-center sansserif" ng-controller="httpCtrl">
+<h1>students</h1>
+<table>
+		<tr>
+			<th>Name</th>
+			<th>Id</th>
+			<th>city</th>
+		</tr>
+		<tr  ng-repeat='user in users'>
+		<td>{{user.name}}</td>
+         <td>{{user.id}}</td>
+         <td>{{user.city}}</td>
+         </tr>
+	</table>
+</div>

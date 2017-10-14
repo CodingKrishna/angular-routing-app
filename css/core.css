@@ -1,0 +1,18 @@
+.pad-zero{
+    padding: 0px;
+}
+.mar-zero{
+  margin: 0px;
+}
+.sansserif {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.con-float-left{
+    float: left;
+}
+.con-float-right{
+    float: right;
+}
+.txt-center{
+    text-align: center;
+}

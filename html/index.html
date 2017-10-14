@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="core.css">
+<link rel="stylesheet" type="text/css" href="color.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="pad-zero mar-zero" ng-App="myApp">
+	<div class="">
+		<div class="header clr-back-cyan clr-white sansserif">
+			<div class="title-txt txt-center con-float-left">
+				<h1>PionnerCoders</h1>
+			</div>
+			<div class="con-list txt-center con-float-left">
+				<ul class="mar-zero">
+					<li><a href="#!home">Home</a></li>
+					<li><a href="#!students">Students</a></li>
+					<li><a href="#!courses">Courses</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="route-con">
+			<ng-view>
+					Index page content..
+			</ng-view>
+		</div>
+		<div class="footer-con sansserif txt-center mar-zero  clr-white clr-back-gray">
+			<p>pioneercoders.com 2017 . All Rights Reserved</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="angular-route.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="studentsList.js"></script>
+<script type="text/javascript" src="course.js"></script>
+</html>

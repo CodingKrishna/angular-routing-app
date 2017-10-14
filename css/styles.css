@@ -1,0 +1,60 @@
+.header{
+    width: 100%;
+    height: 70px;
+}
+.title-txt{
+    width: 30%;
+    height: 70px;
+    line-height: 23px;
+}
+.con-list{
+    width: 50%;
+    height: 70px;
+    margin-left: 266px;
+}
+.con-list ul{
+    padding-left: 194px;
+    padding-top: 27px;
+}
+.con-list ul li{
+    display: inline;
+    padding-left: 20px;
+}
+.con-list ul li a{
+    text-decoration: none;
+    color: white;
+}
+.route-con{
+    width: 100%;
+    height: 519px;
+}
+.footer-con{
+    width: 100%;
+    height: 45px;
+}
+.footer-con p{
+    line-height: 46px;
+}
+.home-con{
+    width: 100%;
+    padding-top: 31px;
+}
+.students-list{
+    width: 100%;
+}
+/*-----------table--------------*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

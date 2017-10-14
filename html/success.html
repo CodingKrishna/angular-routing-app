@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body id ="TabList" onload="getListById(this)">
+    User created successfully...
+  <button> <a href="http://localhost:3000/deleteuser?id=2"></a></button>
+</body>
+<script >
+     function getListById(ele){
+        console.log('begin');
+        var xhr = new XMLHttpRequest();
+        var queryString = "name="+ele.value;
+        xhr.open("GET", "http://localhost:3000/listUsers?"+queryString, true);
+        xhr.onreadystatechange = function() {
+            console.log('onreadystatechange');
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var resData = JSON.parse(xhr.responseText);
+                populateList(resData);
+            }
+            else {
+                console.log('readyState=' + xhr.readyState + ', status: ' + xhr.status);
+            }
+        }
+        console.log('sending...')
+        xhr.send();
+        console.log('end');
+    }
+    function populateList(list){
+        // EXTRACT VALUE FOR HTML HEADER. 
+        // (' ID', 'Name', 'Email' and 'Mobile')
+        var col = [];
+        for (var i = 0; i < list.length; i++) {
+            for (var key in list[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+  // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+     // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+         // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < list.length; i++) {
+
+            tr = table.insertRow(-1);
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                   tabCell.innerHTML = list[i][col[j]];
+            
+            }
+        }
+         // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var newTable = document.getElementById("TabList");
+        newTable.innerHTML = "";
+        newTable.appendChild(table);
+    }
+    </script>
+</html>
